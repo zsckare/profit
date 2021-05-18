@@ -1,0 +1,59 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Registro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row class=" ion-align-items-center" >
+      <ion-col>
+          <img src="https://picsum.photos/200/100"  >
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-list lines="full" class="ion-no-margin">
+          <ion-item>
+            <ion-label >Nombre</ion-label>
+            <ion-input ></ion-input>
+          </ion-item>        
+          <ion-item>
+            Genero
+          </ion-item>
+          <ion-item>
+            <ion-radio-group>
+              <ion-item>
+                <ion-label>Femenino</ion-label>
+                <ion-radio value="femenino"></ion-radio>
+              </ion-item>
+          
+              <ion-item>
+                <ion-label>Masculino</ion-label>
+                <ion-radio value="masculino"></ion-radio>
+              </ion-item>
+            </ion-radio-group>
+          </ion-item>
+
+          <ion-item>
+            <ion-label>Estatura</ion-label>
+            <ion-input ></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label >Peso</ion-label>
+            <ion-input ></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label >Masa muscular</ion-label>
+            <ion-input ></ion-input>
+          </ion-item>
+          
+          <ion-item>
+            <ion-button [routerLink]="['/entrenamientos']"  >Registrarse</ion-button>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
