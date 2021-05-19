@@ -43,6 +43,14 @@ const routes: Routes = [
     path: 'hombrosespalda',
     loadChildren: () => import('./hombrosespalda/hombrosespalda.module').then( m => m.HombrosespaldaPageModule)
   },
+  {
+    path: 'addregistro',
+    loadChildren: () => import('./addregistro/addregistro.module').then( m => m.AddregistroPageModule)
+  },
+  {
+    path: 'ejercicio',
+    loadChildren: () => import('./ejercicio/ejercicio.module').then( m => m.EjercicioPageModule)
+  },
 ];
 
 @NgModule({

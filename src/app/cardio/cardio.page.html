@@ -1,9 +1,53 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>cardio</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Cardio</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col (click)="openEjecicio(0)">
+        <img src="../../assets/cardio/saltotijeras.gif" alt="" style="width: 100px;">
+        <br>
+        Salto de tijera
+      </ion-col>
+      <ion-col>
+        <img src="../../assets/bici.png" alt=""style="width: 75px;">
+        <br>
+        Elevacion de rodillas
+      </ion-col>
+    </ion-row>
 
+
+    <ion-row>
+      <ion-col>
+        <img src="../../assets/brazos.png" alt=""style="width: 75px;">
+        <br>
+        Salto con cuerdas
+      </ion-col>
+      <ion-col>
+        <img src="../../assets/pierna.png" alt=""style="width: 75px;">
+        <br>
+        Burpee
+      </ion-col>
+    </ion-row>
+
+
+    <ion-row>
+      <ion-col>
+        <img src="../../assets/pecho.png" alt=""style="width: 75px;">
+        <br>
+        Escaladas
+      </ion-col>
+      <ion-col>
+        <img src="../../assets/pesas.png" alt=""style="width: 75px;">
+        <br>
+        Saltos laterales
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
