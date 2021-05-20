@@ -9,7 +9,7 @@ export class EjercicioPage implements OnInit {
   
  
   data: any;
- 
+  tiempo:'';
   constructor(private route: ActivatedRoute, private router: Router) {
     console.log("CARGANDO")
     this.route.queryParams.subscribe(params => {
