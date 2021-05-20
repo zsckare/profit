@@ -8,5 +8,15 @@
 </ion-header>
 
 <ion-content>
-
+  <ion-card *ngIf="data">
+    <ion-card-header>
+      <ion-card-title>
+        {{ data.name }}
+      </ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <img src="{{data.img}}" alt="">
+      {{data}}
+    </ion-card-content>
+  </ion-card>
 </ion-content>

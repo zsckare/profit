@@ -10,27 +10,27 @@ export class CardioPage implements OnInit {
   ejercicios = [
     {
       name:'Salto de tijera',
-      img:''
+      img:'../../assets/cardio/saltotijeras.gif'
     },
     {
       name:'Elevacion de rodillas',
-      img:''
+      img:'../../assets/cardio/saltotijeras.gif'
     },
     {
       name:'Salto con cuerda',
-      img:''
+      img:'../../assets/cardio/saltotijeras.gif'
     },
     {
       name:'Burpee',
-      img:''
+      img:'../../assets/cardio/saltotijeras.gif'
     },
     {
       name:'Escaladas',
-      img:''
+      img:'../../assets/cardio/saltotijeras.gif'
     },
     {
       name:'Saltos laterales',
-      img:''
+      img:'../../assets/cardio/saltotijeras.gif'
     }
   ]
   constructor(private router: Router) { }
