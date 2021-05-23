@@ -10,27 +10,27 @@ export class CardioPage implements OnInit {
   ejercicios = [
     {
       name:'Salto de tijera',
-      img:'../../assets/cardio/saltotijeras.gif',
+      img:'../../assets/cardio/jumpingjacks.gif',
       descripcion:'3 Repeticiones 3 Series '
     },
     {
       name:'Elevacion de rodillas',
-      img:'../../assets/cardio/saltotijeras.gif',
+      img:'../../assets/cardio/patadasconsalto.gif',
       descripcion:'3 Repeticiones 3 Series '
     },
     {
-      name:'Salto con cuerda',
-      img:'../../assets/cardio/saltotijeras.gif',
+      name:'Trotes simples',
+      img:'../../assets/cardio/trotes simples.gif',
       descripcion:'3 Repeticiones 3 Series '
     },
     {
       name:'Burpee',
-      img:'../../assets/cardio/saltotijeras.gif',
+      img:'../../assets/cardio/burpee.gif',
       descripcion:'3 Repeticiones 3 Series '
     },
     {
-      name:'Escaladas',
-      img:'../../assets/cardio/saltotijeras.gif',
+      name:'Saltos de Aguila',
+      img:'../../assets/cardio/Saltos de aguila.gif',
       descripcion:'3 Repeticiones 3 Series '
     },
     {
@@ -47,7 +47,7 @@ export class CardioPage implements OnInit {
   openEjecicio(index) {
     let navigationExtras: NavigationExtras = {
       state: {
-        special: JSON.stringify(this.ejercicios[0])
+        special: JSON.stringify(this.ejercicios[index])
       }
     };
     console.log(navigationExtras)

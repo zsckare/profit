@@ -8,5 +8,46 @@
 </ion-header>
 
 <ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col (click)="openEjecicio(0)">
+        <img src="../../assets/brazos/back lifting.gif" alt="" style="width: 150px;">
+        <br>
+        Levantamiento trasero
+      </ion-col>
+      <ion-col (click)="openEjecicio(1)">
+        <img src="../../assets/brazos/front lifting.gif" alt=""style="width: 150px;">
+        <br>
+        Levantamiento frontal
+      </ion-col>
+    </ion-row>
 
+
+    <ion-row>
+      <ion-col (click)="openEjecicio(2)">
+        <img src="../../assets/brazos/laterales para triceps.gif" alt=""style="width: 150px;">
+        <br>
+        Laterales Triceps
+      </ion-col>
+      <ion-col (click)="openEjecicio(3)">
+        <img src="../../assets/brazos/levantamiento de mancuernas.gif" alt=""style="width: 150px;">
+        <br>
+        Levantamiento de mancuernas
+      </ion-col>
+    </ion-row>
+
+
+    <ion-row>
+      <ion-col (click)="openEjecicio(4)">
+        <img src="../../assets/brazos/levantamiento completo.gif" alt=""style="width: 150px;">
+        <br>
+        Levantamiento completo
+      </ion-col>
+      <ion-col (click)="openEjecicio(5)">
+        <img src="../../assets/brazos/move pushups.gif" alt=""style="width: 150px;">
+        <br>
+        Flexiones con movimeinto
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
