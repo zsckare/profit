@@ -10,38 +10,21 @@
 <ion-content>
 
   <ion-list>
-    <ion-item>
+    <ion-item *ngFor="let data of Data">
       <ion-avatar slot="start">
-        <img src="https://picsum.photos/50">
+        <img [src]="_DomSanitizer.bypassSecurityTrustUrl(data.foto)">
       </ion-avatar>
       <ion-label>
-        <h2>Semana 1</h2>
-        <h2>Peso: </h2>
-        <h3>Masa Muscular</h3>
+        <h2>Semana {{key}}</h2>
+        <h2>Peso: {{data.peso}}</h2>
+        <h3>Masa Muscular: {{data.masa_muscular}}</h3>
       </ion-label>
-    </ion-item>
+      
+      
 
-    <ion-item>
-      <ion-avatar slot="start">
-        <img src="https://picsum.photos/50">
-      </ion-avatar>
-      <ion-label>
-        <h2>Semana 2</h2>
-        <h2>Peso: </h2>
-        <h3>Masa Muscular</h3>
-      </ion-label>
     </ion-item>
-
-    <ion-item>
-      <ion-avatar slot="start">
-        <img src="https://picsum.photos/50">
-      </ion-avatar>
-      <ion-label>
-        <h2>Semana 3</h2>
-        <h2>Peso: </h2>
-        <h3>Masa Muscular</h3>
-      </ion-label>
-    </ion-item>
+    
+   
   </ion-list>
 
 
