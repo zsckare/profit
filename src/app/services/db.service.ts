@@ -83,7 +83,37 @@ export class DbService {
       this.getProgresos();
     });
   }
+
+  updateProgreso(id, foto,peso) {
+    let data = [peso,foto];
+    return this.storage.executeSql(`UPDATE progresostable SET peso = ?, foto = ? WHERE id = ${id}`, data)
+    .then(data => {
+      this.getProgresos();
+    })
+  }
  
+  deleteProgreso(id) {
+    return this.storage.executeSql('DELETE FROM progresostable WHERE id = ?', [id])
+    .then(_ => {
+      this.getProgresos();
+    });
+  }
+
+
+  // --- Registro
+  registrarUsuario(nombre,genero,estatura,peso) {
+    let data = [nombre,genero,estatura,peso];
+    return this.storage.executeSql('INSERT INTO registroTable (nombre,genero,estatura,peso) VALUES (?,?, ?,?)', data)
+    .then(res => {
+      
+    });
+  }
+
+
+
+
+
+
   // Get single object
   /*getSong(id): Promise<Song> {
     return this.storage.executeSql('SELECT * FROM songtable WHERE id = ?', [id]).then(res => { 

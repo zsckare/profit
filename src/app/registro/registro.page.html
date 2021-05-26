@@ -16,13 +16,13 @@
         <ion-list lines="full" class="ion-no-margin">
           <ion-item>
             <ion-label >Nombre</ion-label>
-            <ion-input ></ion-input>
+            <ion-input [(ngModel)]="nombre" ></ion-input>
           </ion-item>        
           <ion-item>
             Genero
           </ion-item>
           <ion-item>
-            <ion-radio-group>
+            <ion-radio-group [(ngModel)]="genero">
               <ion-item>
                 <ion-label>Femenino</ion-label>
                 <ion-radio value="femenino"></ion-radio>
@@ -37,20 +37,20 @@
 
           <ion-item>
             <ion-label>Estatura</ion-label>
-            <ion-input ></ion-input>
+            <ion-input [(ngModel)]="estatura" placeholder="170"></ion-input>
           </ion-item>
           <ion-item>
             <ion-label >Peso</ion-label>
-            <ion-input ></ion-input>
+            <ion-input [(ngModel)]="peso" placeholder="50"></ion-input>
           </ion-item>
 
           <ion-item>
             <ion-label >Masa muscular</ion-label>
-            <ion-input ></ion-input>
+            <ion-input [(ngModel)]="masa_muscular" ></ion-input>
           </ion-item>
           
           <ion-item>
-            <ion-button [routerLink]="['/entrenamientos']"  >Registrarse</ion-button>
+            <ion-button (click)="registrarse()" >Registrarse</ion-button>
           </ion-item>
         </ion-list>
       </ion-col>

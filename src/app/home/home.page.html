@@ -7,11 +7,7 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">ProFit</ion-title>
-    </ion-toolbar>
-  </ion-header>
+ 
 
   <div id="container">
     <ion-grid>
@@ -28,7 +24,7 @@
       
       <ion-row>
         <ion-col>
-          <ion-button [routerLink]="['/registro']">Ingresar</ion-button>
+          <ion-button (click)="goto()">Ingresar</ion-button>
         </ion-col>
       </ion-row>
 

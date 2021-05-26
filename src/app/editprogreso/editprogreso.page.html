@@ -3,7 +3,7 @@
     <ion-buttons slot="start">
       <ion-back-button defaultHref="/"></ion-back-button>
     </ion-buttons>
-    <ion-title>Registrar Progreso</ion-title>
+    <ion-title>Editar Progreso</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -11,19 +11,20 @@
   <ion-row>
     <ion-col>
       <ion-list>
+
         <ion-item>
-          <ion-label >Estatura</ion-label>
-          <ion-input [(ngModel)]="estatura" disabled ></ion-input>
+          <ion-label >Altura</ion-label>
+          <ion-input [(ngModel)]="altura" ></ion-input>
         </ion-item>
 
         <ion-item>
           <ion-label >Peso</ion-label>
-          <ion-input [(ngModel)]="peso" (change)="getMasaMuscular()"></ion-input>
+          <ion-input [(ngModel)]="peso" ></ion-input>
         </ion-item>
 
         <ion-item>
           <ion-label >Masa muscular</ion-label>
-          <ion-input [(ngModel)]="masa_muscular" disabled ></ion-input>
+          <ion-input [(ngModel)]="masa_muscular" ></ion-input>
         </ion-item>
 
         <ion-item>
@@ -42,7 +43,7 @@
   <ion-row>
     <ion-col style="text-align: center;">
       <ion-button (click)="guardarProgreso()">
-        Guardar
+        Editar Progreso
       </ion-button>
     </ion-col>
   </ion-row>

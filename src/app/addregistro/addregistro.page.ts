@@ -11,10 +11,10 @@ import { NavController } from '@ionic/angular';
 })
 export class AddregistroPage implements OnInit {
   
-  peso:''
-  masa_muscular: ''
+  peso:0
+  masa_muscular: string;
   foto: any;
-
+  estatura: string;
   constructor(private camera: Camera,private db: DbService,public navCtrl: NavController) { }
 
   addPhotoToGallery() {
@@ -28,12 +28,17 @@ export class AddregistroPage implements OnInit {
     });
   }
   ngOnInit() {
+    this.estatura = localStorage.getItem('estatura')
+  }
+
+  getMasaMuscular(){
+    var res = this.peso / parseInt(this.estatura) * parseInt(this.estatura)
+    this.masa_muscular =  ""+res
   }
 
   guardarProgreso(){
    this.db.addProgreso(this.peso,this.masa_muscular,this.foto).then(
-     (res)=>{
-       console.log(res)
+     (res)=>{       
        this.navCtrl.pop()   
      }
 
