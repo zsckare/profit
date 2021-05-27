@@ -41,7 +41,6 @@ export class AddregistroPage implements OnInit {
      (res)=>{       
        this.navCtrl.pop()   
      }
-
    )
   }
 

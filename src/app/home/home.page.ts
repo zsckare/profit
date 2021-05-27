@@ -21,12 +21,12 @@ export class HomePage {
         })
       }
     });     
-    
     var getuser = localStorage.getItem('estatura');
 
     if(getuser){
       this.hayUsuario = 1;
     }
+    
   }
 
 
