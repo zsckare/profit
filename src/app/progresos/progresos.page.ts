@@ -36,7 +36,7 @@ export class ProgresosPage implements OnInit {
   }
 
   getMasaMuscular(peso){
-    var res = peso / parseInt(this.estatura) * parseInt(this.estatura)
+    var res = peso / parseInt(this.estatura) * 2
     return (""+res)
   }
 

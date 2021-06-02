@@ -32,7 +32,7 @@ export class AddregistroPage implements OnInit {
   }
 
   getMasaMuscular(){
-    var res = this.peso / parseInt(this.estatura) * parseInt(this.estatura)
+    var res = this.peso / parseInt(this.estatura) * 2
     this.masa_muscular =  ""+res
   }
 

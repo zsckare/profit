@@ -16,20 +16,21 @@
     </ion-card-header>
     <ion-card-content style="text-align: center;">
       <img src="{{data.img}}" alt="">
-      <p style="text-align: center;">{{data.descripcion}}</p>
-
-      <ion-row>
-        <ion-col style="text-align: center;">
-          <ion-button> Iniciar</ion-button>
-        </ion-col>
-      </ion-row>
-
+      <p style="text-align: center;">{{repeticiones}} repeticions y {{series}} series</p>
 
       <ion-row>
         <ion-col>
-          <h4>{{tiempo}}</h4>
+          <h4>Tiempo restante {{restante}} segundos</h4>
         </ion-col>
       </ion-row>
+      <ion-row>
+        <ion-col style="text-align: center;">
+          <ion-button (click)="startTimer()"> Iniciar</ion-button>
+        </ion-col>
+      </ion-row>
+
+
+      
     </ion-card-content>
   </ion-card>
 </ion-content>
